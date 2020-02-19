@@ -1,0 +1,8 @@
+flask:
+  build: .
+  ports:
+   - "8888:5000"
+  #depends_on:
+  # - redis
+#redis:
+
