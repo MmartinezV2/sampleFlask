@@ -1,10 +1,11 @@
 version: "3.7"
-  services: 
-    web:
-      image: flask
-      build:
-        cache-from: flask
-        context: .
-      ports:
-        - "8888:5000"
+services: 
+  web:
+    image: flask
+    build:
+      cache_from: 
+        - flask
+      context: .
+    ports:
+      - "8888:5000"
 
