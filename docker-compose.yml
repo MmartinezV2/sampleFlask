@@ -1,8 +1,10 @@
-flask:
-  build: .
-  ports:
-   - "8888:5000"
-  #depends_on:
-  # - redis
-#redis:
+version: "3.7"
+  services: 
+    web:
+      image: flask
+      build:
+        cache-from: flask
+        context: .
+      ports:
+        - "8888:5000"
 
