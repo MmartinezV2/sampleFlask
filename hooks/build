@@ -2,5 +2,8 @@
 
 set -e
 
+echo "pulling mmartinezv/sampleflask..." 
+docker pull mmartinezv/sampleflask >>/dev/null
+echo "done!"
 docker-compose build
 

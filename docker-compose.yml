@@ -1,10 +1,10 @@
 version: "3.6"
 services: 
   web:
-    image: flask
+    image: mmartinezv/sampleflask
     build:
       cache_from: 
-        - flask
+        - mmartinezv/sampleflask
       context: .
     ports:
       - "8888:5000"
