@@ -1,7 +1,7 @@
 # Imatge base
 FROM alpine:3.5
 #FROM ubuntu:latest
-# Instal·lam pyhon i pip
+# Instal·lam python i pip
 RUN apk add --update py2-pip
 #RUN apt-get update && apt-get install python-pip -y && apt-get clean
 # Instal·lar moduls python reqerits per l'aplicacio
